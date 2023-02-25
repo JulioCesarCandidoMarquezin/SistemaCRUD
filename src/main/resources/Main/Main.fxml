@@ -10,17 +10,20 @@
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
          </columnConstraints>
          <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
-         <Button fx:id="cadastrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="175.0" styleClass="DataBaseFunctionButtons" text="Cadastrar usuário" textAlignment="CENTER" />
-         <Button fx:id="verificar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="175.0" styleClass="DataBaseFunctionButtons" text="Verificar usuário" textAlignment="CENTER" GridPane.rowIndex="1" />
-         <Button fx:id="ler" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="175.0" styleClass="DataBaseFunctionButtons" text="Ler informações de usuário" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
-         <Button fx:id="atualizar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="175.0" styleClass="DataBaseFunctionButtons" text="Atualizar usuário" textAlignment="CENTER" GridPane.rowIndex="3" />
-         <Button fx:id="deletar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="175.0" styleClass="DataBaseFunctionButtons" text="Deletar usuário" textAlignment="CENTER" GridPane.rowIndex="4" />
+         <Button fx:id="botaoCadastrar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cadastrar usuário" textAlignment="CENTER" />
+         <Button fx:id="botaoVerificar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Verificar usuário" textAlignment="CENTER" GridPane.rowIndex="1" />
+         <Button fx:id="botaoLerInformacoes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Ler informações de usuário" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+         <Button fx:id="botaoAtualizarInformacoes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Atualizar usuário" textAlignment="CENTER" GridPane.rowIndex="3" />
+         <Button fx:id="botaoDeletar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="100.0" prefWidth="175.0" styleClass="DataBaseFunctionButtons" text="Deletar usuário" textAlignment="CENTER" GridPane.rowIndex="4" />
+         <Button fx:id="botaoGerarRelatorio" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Deletar usuário" textAlignment="CENTER" GridPane.rowIndex="4" />
+         <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Gerar relatório" GridPane.rowIndex="5" />
       </GridPane>
    </left>
 </BorderPane>

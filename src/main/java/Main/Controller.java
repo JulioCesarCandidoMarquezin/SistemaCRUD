@@ -14,17 +14,21 @@ public class Controller {
     GridPane painelDeBotoes;
 
     @FXML
-    Button cadastrar;
+    Button botaoCadastrar;
 
     @FXML
-    Button verificar;
+    Button botaoVerificar;
 
     @FXML
-    Button ler;
+    Button botaoLerInformacoes;
 
     @FXML
-    Button atualizar;
+    Button botaoAtualizarInformacoes;
 
     @FXML
-    Button deletar;
+    Button botaoDeletar;
+
+    @FXML
+    Button botaoGerarRelatorio;
+
 }
