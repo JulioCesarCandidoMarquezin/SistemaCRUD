@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Main.Controller">
+   <left>
+      <GridPane fx:id="painelDeBotoes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="175.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <Button fx:id="botaoCadastrar" onAction="#trocarPaneParaCadastro" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Cadastrar usuário" textAlignment="CENTER" />
+         <Button fx:id="botaoVerificar" onAction="#trocarPaneParaVerificar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Verificar usuário" textAlignment="CENTER" GridPane.rowIndex="1" />
+         <Button fx:id="botaoLerInformacoes" onAction="#trocarPaneParaLerInformacoes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Ler informações de usuário" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+         <Button fx:id="botaoAtualizarInformacoes" onAction="#trocarPaneParaAtualizar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Atualizar usuário" textAlignment="CENTER" GridPane.rowIndex="3" />
+         <Button fx:id="botaoDeletar" onAction="#trocarPaneParaDeletar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Deletar usuário" textAlignment="CENTER" GridPane.rowIndex="4" />
+         <Button fx:id="botaoGerarRelatorio" onAction="#trocarPaneParaGerarRelatorio" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="GerarRelatorio" textAlignment="CENTER" GridPane.rowIndex="5" />
+      </GridPane>
+   </left>
+   <center>
+      <Pane fx:id="fxml"/>
+   </center>
+</BorderPane>
