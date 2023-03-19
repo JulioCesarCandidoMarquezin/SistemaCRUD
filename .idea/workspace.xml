@@ -4,32 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a928c456-75d9-499e-bb30-424f801801dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Main/IconeBaseDeDados.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Main/Main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Main/Main.fxml" afterDir="false" />
+    <list default="true" id="a928c456-75d9-499e-bb30-424f801801dd" name="Changes" comment="Criados os FXMLs e Controllers que comporão a parte funcional da GUI">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Atualizar/AtualizarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Cadastro/CadastroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Deletar/DeletarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/GerarRelatorio/GerarRelatorioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/LerInformacoes/LerInformacoesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Main/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Verificar/VerificarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Atualizar/Atualizar.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Cadastro/Cadastro.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Deletar/Deletar.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/GerarRelatorio/GerarRelatorio.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/LerInformacoes/LerInformacoes.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Main/Main.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Verificar/Verificar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/IconeBaseDeDados.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI/Main/IconeBaseDeDados.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/Main.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b0b8a290-5510-4f99-8e5a-ceb6288ea732" />
+        <option name="url" value="https://github.com/JulioCesarCandidoMarquezin/SistemaCRUD.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -46,14 +75,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Emerson/Desktop/Programação/Projetos/SistemaCRUD/src/main/java/GUI/Deletar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\java\GUI\Deletar" />
+      <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\java\GUI\Atualizar" />
+      <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\resources\GUI\Verificar" />
+      <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\resources\GUI\GerarRelatorio" />
+      <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\resources\GUI\LerInformações" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\resources\GUI.Cadastro" />
+      <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="GUI.Deletar" />
+      <recent name="GUI.Atualizar" />
+      <recent name="GUI.Verificar" />
+      <recent name="GUI.LerInformações" />
+      <recent name="GUI.GerarRelatorio" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.Main.Main" />
+      <module name="SistemaCRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.Main.Controller" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,6 +137,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677076365474</updated>
     </task>
+    <task id="LOCAL-00001" summary="Criados os FXMLs e Controllers que comporão a parte funcional da GUI">
+      <created>1679198319677</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679198319677</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,5 +163,16 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
+    <MESSAGE value="Criados os FXMLs e Controllers que comporão a parte funcional da GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criados os FXMLs e Controllers que comporão a parte funcional da GUI" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SistemaCRUD$Main.ic" NAME="Main Coverage Results" MODIFIED="1679197496752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>GUI.Main.Controller</FILTER>
+    </SUITE>
   </component>
 </project>
