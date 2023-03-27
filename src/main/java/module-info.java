@@ -4,6 +4,7 @@ module crud.sistemacrud {
 
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
+    requires java.sql;
 
     opens GUI.Main to javafx.fxml;
     exports GUI.Main;

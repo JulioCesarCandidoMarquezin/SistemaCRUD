@@ -4,28 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a928c456-75d9-499e-bb30-424f801801dd" name="Changes" comment="Criados os FXMLs e Controllers que comporão a parte funcional da GUI">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Atualizar/AtualizarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Cadastro/CadastroController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Deletar/DeletarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/GerarRelatorio/GerarRelatorioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/LerInformacoes/LerInformacoesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Main/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Verificar/VerificarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Atualizar/Atualizar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Cadastro/Cadastro.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Deletar/Deletar.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/GerarRelatorio/GerarRelatorio.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/LerInformacoes/LerInformacoes.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Main/Main.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/GUI/Verificar/Verificar.fxml" afterDir="false" />
+    <list default="true" id="a928c456-75d9-499e-bb30-424f801801dd" name="Changes" comment="Criados Exceptions personalizados no package GUI para caso ocorra uma Exception no carregamento do FXML.">
+      <change afterPath="$PROJECT_DIR$/DataBase.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataBase/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataBase/Exceptions/DataBaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataBase/Exceptions/DataBaseIntegrityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DataBase/Exceptions/PropertiesNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/DAO/Implentation/PlantaDaoJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/DAO/PlantaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/Enums/ConservationStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Entities/Planta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Exceptions/FXMLLoadException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Exceptions/FXMLLoadException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Exceptions/FXMLNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Exceptions/FXMLNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/IconeBaseDeDados.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI/Main/IconeBaseDeDados.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Main/Main.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,11 +74,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Emerson/Desktop/Programação/Projetos/SistemaCRUD/src/main/java/GUI/Deletar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Emerson/Desktop/Programação/Bancos de dados/MySQL/mysql-connector-j-8.0.32/mysql-connector-j-8.0.32.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -99,6 +93,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\resources\GUI.Cadastro" />
       <recent name="C:\Users\Emerson\Desktop\Programação\Projetos\SistemaCRUD\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="GUI" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="GUI.Deletar" />
@@ -144,7 +141,49 @@
       <option name="project" value="LOCAL" />
       <updated>1679198319677</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Criados os FXMLs e Controllers que comporão o Pane localizado no centro da GUI">
+      <created>1679198619886</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679198619886</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Componentes Main movidos de lugar">
+      <created>1679198718218</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679198718218</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Alterações nos recursos do projeto">
+      <created>1679198750742</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679198750742</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Classe Main movida">
+      <created>1679198768910</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679198768910</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Alterações na classe Controller, agora MainController, para que cada button tenha seu onAction que passa o caminho para seu respectivo FXML em relaçao ao Resources, criado método loadFXML que substitui os métodos que carregavam especificamente cada FXML.">
+      <created>1679800332823</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679800332823</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Criados Exceptions personalizados no package GUI para caso ocorra uma Exception no carregamento do FXML.">
+      <created>1679800410888</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679800410888</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +203,13 @@
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
     <MESSAGE value="Criados os FXMLs e Controllers que comporão a parte funcional da GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criados os FXMLs e Controllers que comporão a parte funcional da GUI" />
+    <MESSAGE value="Criados os FXMLs e Controllers que comporão o Pane localizado no centro da GUI" />
+    <MESSAGE value="Componentes Main movidos de lugar" />
+    <MESSAGE value="Alterações nos recursos do projeto" />
+    <MESSAGE value="Classe Main movida" />
+    <MESSAGE value="Alterações na classe Controller, agora MainController, para que cada button tenha seu onAction que passa o caminho para seu respectivo FXML em relaçao ao Resources, criado método loadFXML que substitui os métodos que carregavam especificamente cada FXML." />
+    <MESSAGE value="Criados Exceptions personalizados no package GUI para caso ocorra uma Exception no carregamento do FXML." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criados Exceptions personalizados no package GUI para caso ocorra uma Exception no carregamento do FXML." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
