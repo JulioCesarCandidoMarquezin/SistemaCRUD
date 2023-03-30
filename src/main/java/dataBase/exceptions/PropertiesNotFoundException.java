@@ -1,4 +1,4 @@
-package DataBase.Exceptions;
+package dataBase.exceptions;
 
 public class PropertiesNotFoundException extends RuntimeException{
     public PropertiesNotFoundException(){
