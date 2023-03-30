@@ -1,4 +1,4 @@
-package Model.Entities;
+package model.entities;
 
 import javafx.scene.image.Image;
 
