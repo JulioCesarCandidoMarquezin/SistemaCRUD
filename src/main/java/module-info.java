@@ -5,25 +5,26 @@ module crud.sistemacrud {
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
     requires java.sql;
+    requires java.desktop;
 
-    opens GUI.Main to javafx.fxml;
-    exports GUI.Main;
+    opens controllers.main to javafx.fxml;
+    exports controllers.main;
 
-    opens GUI.Cadastro to javafx.fxml;
-    exports GUI.Cadastro;
+    opens controllers.cadastro to javafx.fxml;
+    exports controllers.cadastro;
 
-    opens GUI.Verificar to javafx.fxml;
-    exports GUI.Verificar;
+    opens controllers.verificar to javafx.fxml;
+    exports controllers.verificar;
 
-    opens GUI.LerInformacoes to javafx.fxml;
-    exports GUI.LerInformacoes;
+    opens controllers.lerInformacoes to javafx.fxml;
+    exports controllers.lerInformacoes;
 
-    opens GUI.Atualizar to javafx.fxml;
-    exports GUI.Atualizar;
+    opens controllers.atualizar to javafx.fxml;
+    exports controllers.atualizar;
 
-    opens GUI.Deletar to javafx.fxml;
-    exports GUI.Deletar;
+    opens controllers.deletar to javafx.fxml;
+    exports controllers.deletar;
 
-    opens GUI.GerarRelatorio to javafx.fxml;
-    exports GUI.GerarRelatorio;
+    opens controllers.gerarRelatorio to javafx.fxml;
+    exports controllers.gerarRelatorio;
 }
