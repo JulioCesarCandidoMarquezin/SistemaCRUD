@@ -25,22 +25,26 @@ public class MainController {
     GridPane painelDeBotoes = new GridPane();
 
     @FXML
-    Button botaoCadastrar = new Button();
+    Button buttonHome = new Button();
 
     @FXML
-    Button botaoVerificar = new Button();
+    Button buttonCadastrar = new Button();
 
     @FXML
-    Button botaoLerInformacoes = new Button();
+    Button buttonVerificar = new Button();
 
     @FXML
-    Button botaoAtualizarInformacoes = new Button();
+    Button buttonAtualizarInformacoes = new Button();
 
     @FXML
-    Button botaoDeletar = new Button();
+    Button buttonDeletar = new Button();
 
     @FXML
-    Button botaoGerarRelatorio = new Button();
+    Button buttonGerarRelatorio = new Button();
+
+    public void onButtonLerInformacoesAction(){
+        loadFXML("/controllers/home/Home.fxml");
+    }
 
     public void onButtonCadastrarAction(){
         loadFXML("/controllers/cadastro/Cadastro.fxml");
@@ -48,10 +52,6 @@ public class MainController {
 
     public void onButtonVerificarAction(){
         loadFXML("/controllers/verificar/Verificar.fxml");
-    }
-
-    public void onButtonLerInformacoesAction(){
-        loadFXML("/controllers/lerInformacoes/LerInformacoes.fxml");
     }
 
     public void onButtonAtualizarAction(){
@@ -67,7 +67,7 @@ public class MainController {
     }
 
     @FXML
-    public synchronized void loadFXML(String caminhoRelativoAoResources){
+    public void loadFXML(String caminhoRelativoAoResources){
         try {
             Pane anchorPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(caminhoRelativoAoResources)));
             fxml.getChildren().setAll(anchorPane);
@@ -79,5 +79,4 @@ public class MainController {
             throw new FXMLNotFoundException("FXML no caminho " + caminhoRelativoAoResources + " não foi encontrado");
         }
     }
-
 }

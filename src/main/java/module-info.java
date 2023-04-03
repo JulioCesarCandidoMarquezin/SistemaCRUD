@@ -10,14 +10,14 @@ module crud.sistemacrud {
     opens controllers.main to javafx.fxml;
     exports controllers.main;
 
+    opens controllers.home to javafx.fxml;
+    exports controllers.home;
+
     opens controllers.cadastro to javafx.fxml;
     exports controllers.cadastro;
 
     opens controllers.verificar to javafx.fxml;
     exports controllers.verificar;
-
-    opens controllers.lerInformacoes to javafx.fxml;
-    exports controllers.lerInformacoes;
 
     opens controllers.atualizar to javafx.fxml;
     exports controllers.atualizar;
@@ -27,4 +27,9 @@ module crud.sistemacrud {
 
     opens controllers.gerarRelatorio to javafx.fxml;
     exports controllers.gerarRelatorio;
+
+    opens model.entities.enums to javafx.fxml;
+    exports model.entities.enums;
+
+
 }
