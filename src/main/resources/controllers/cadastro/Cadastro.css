@@ -1,0 +1,6 @@
+.label{
+    -fx-text-fill: rgba(1,138,216,255);
+}
+#cadastrarButton {
+    -fx-background-radius: 10px;
+}
