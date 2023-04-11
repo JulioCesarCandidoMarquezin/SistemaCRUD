@@ -69,8 +69,8 @@ public class MainController {
     @FXML
     public void loadFXML(String caminhoRelativoAoResources){
         try {
-            Pane anchorPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(caminhoRelativoAoResources)));
-            fxml.getChildren().setAll(anchorPane);
+            Pane pane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(caminhoRelativoAoResources)));
+            fxml.getChildren().setAll(pane);
         }
         catch (IOException IOE){
             throw new FXMLLoadException("Não foi possível carregar o FXML");
