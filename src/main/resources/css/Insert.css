@@ -1,0 +1,9 @@
+.label{
+    -fx-text-fill: rgba(1,138,216,255);
+}
+.button {
+    -fx-background-radius: 10px;
+}
+.empty-field {
+    -fx-border-color: red;
+}

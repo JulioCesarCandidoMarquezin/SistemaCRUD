@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GenerateReport">
+   <AnchorPane prefHeight="500.0" prefWidth="624.0" fx:id="painelGerarRelatorio">
+      <Button layoutX="251.0" layoutY="210.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="123.0" text="g" />
+   </AnchorPane>
+</Pane>
+
