@@ -1,6 +1,6 @@
 package model.entities.enums;
 
-public enum ConservationStatus {
+public enum PlantConservationStatus {
     CRITICAL,
     ENDANGERED,
     VULNERABLE,
