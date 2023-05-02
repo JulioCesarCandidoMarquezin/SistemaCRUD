@@ -33,7 +33,7 @@ public class DataBase {
             String user = properties.getProperty("user");
             String password = properties.getProperty("password");
             String dataBaseUrl = properties.getProperty("databaseurl");
-            connection = DriverManager.getConnection(user, password, dataBaseUrl);
+            connection = DriverManager.getConnection(dataBaseUrl, user, password);
         } catch (SQLException e) {
             throw new DataBaseException("Não foi possível se conectar ao banco de dados");
         }
