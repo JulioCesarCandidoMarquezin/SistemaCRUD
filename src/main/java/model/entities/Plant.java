@@ -1,25 +1,24 @@
 package model.entities;
 
 import javafx.scene.image.Image;
-
 import java.util.Objects;
 
-public class Planta {
+public class Plant {
     private String scientificName;
     private String commonName;
-    private String description;
+    private String descriptions;
     private String habitat;
     private String origin;
     private int conservationStatus;
     private Image image;
 
-    public Planta() {
+    public Plant() {
     }
 
-    public Planta(String scientificName, String commonName, String description, String habitat, String origin, int conservationStatus, Image image) {
+    public Plant(String scientificName, String commonName, String descriptions, String habitat, String origin, int conservationStatus, Image image) {
         this.scientificName = scientificName;
         this.commonName = commonName;
-        this.description = description;
+        this.descriptions = descriptions;
         this.habitat = habitat;
         this.origin = origin;
         this.conservationStatus = conservationStatus;
@@ -43,11 +42,11 @@ public class Planta {
     }
 
     public String getDescription() {
-        return description;
+        return descriptions;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.descriptions = descriptions;
     }
 
     public String getHabitat() {
@@ -84,13 +83,13 @@ public class Planta {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Planta planta = (Planta) o;
-        return conservationStatus == planta.conservationStatus && scientificName.equals(planta.scientificName) && commonName.equals(planta.commonName) && Objects.equals(description, planta.description) && Objects.equals(habitat, planta.habitat) && Objects.equals(origin, planta.origin) && Objects.equals(image, planta.image);
+        Plant plant = (Plant) o;
+        return conservationStatus == plant.conservationStatus && scientificName.equals(plant.scientificName) && commonName.equals(plant.commonName) && Objects.equals(descriptions, plant.descriptions) && Objects.equals(habitat, plant.habitat) && Objects.equals(origin, plant.origin) && Objects.equals(image, plant.image);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(scientificName, commonName, description, habitat, origin, conservationStatus, image);
+        return Objects.hash(scientificName, commonName, descriptions, habitat, origin, conservationStatus, image);
     }
 
     @Override
@@ -98,7 +97,7 @@ public class Planta {
         return "Planta{" +
                 "scientificName='" + scientificName + '\'' +
                 ", commonName='" + commonName + '\'' +
-                ", description='" + description + '\'' +
+                ", description='" + descriptions + '\'' +
                 ", habitat='" + habitat + '\'' +
                 ", origin='" + origin + '\'' +
                 ", conservationStatus=" + conservationStatus +
