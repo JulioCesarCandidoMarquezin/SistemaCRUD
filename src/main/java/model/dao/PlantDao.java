@@ -8,11 +8,12 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface PlantDao extends Serializable {
+    long serialVersionUID = 1L;
 
     void insert(Plant plant) throws SQLException, IOException;
     List<Plant> findAll() throws SQLException, IOException;
-    Plant findByScientificName(Plant plant) throws IOException, SQLException;
-    Plant findByCommonName(Plant plant) throws IOException, SQLException;
+    List<Plant> findByScientificName(String plantScientificName) throws IOException, SQLException;
+    List<Plant> findByCommonName(String plantCommonName) throws IOException, SQLException;
     void updatePlantByScientificName(Plant plant) throws SQLException, IOException;
     void updatePlantByCommonName(Plant plant) throws SQLException, IOException;
     void deletePlantByScientificName(Plant plant) throws SQLException;
