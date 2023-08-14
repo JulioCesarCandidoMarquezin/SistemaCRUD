@@ -17,7 +17,9 @@ import model.dao.implentation.PlantDaoJDBC;
 import model.entities.Plant;
 import model.entities.enums.PlantConservationStatus;
 import utils.Constraints;
-import views.Alerts;
+import utils.Alerts;
+import utils.ShowImage;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -87,16 +89,12 @@ public class InsertController implements Initializable {
             imageView.setImage(new Image(file.toURI().toString()));
     }
 
-    private void imageVisualizer() {
-        System.out.println("Test");
-    }
-
     @FXML
     private void imageViewAction(MouseEvent mouseEvent){
         if (mouseEvent.getButton() == MouseButton.PRIMARY)
             imageChooser();
         else
-            imageVisualizer();
+            ShowImage.showImagePopup(imageView.getImage());
     }
 
     private boolean formValidation(){
@@ -147,7 +145,7 @@ public class InsertController implements Initializable {
                         descriptionTextArea.getText(),
                         habitatsTextField.getText(),
                         originTextField.getText(),
-                        conservationStatusComboBox.getValue().ordinal(),
+                        conservationStatusComboBox.getValue(),
                         imageView.getImage()
                 ));
                 Alerts.alertInformation("Plant successfully registered", "Operation completed", "");
