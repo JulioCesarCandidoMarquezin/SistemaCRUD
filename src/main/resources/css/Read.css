@@ -5,6 +5,12 @@
     -fx-border-color: rgba(1,138,216,255);
 }
 
+.label{
+    -fx-size: 16px;
+    -fx-text-fill: rgba(1,138,216,255);
+}
+
 .button {
+    -fx-size: 16px;
     -fx-background-radius: 10px;
 }
