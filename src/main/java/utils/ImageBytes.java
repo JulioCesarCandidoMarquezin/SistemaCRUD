@@ -8,8 +8,9 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-public class ImageByte {
+public class ImageBytes {
     public static byte[] imageToByteArrayConverter(Image image) throws IOException, NullPointerException{
+        if(image == null) return null;
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         BufferedImage bufferedImage = SwingFXUtils.fromFXImage(image, null);
         ImageIO.write(bufferedImage, "png", outputStream);
@@ -17,6 +18,7 @@ public class ImageByte {
     }
 
     public static Image byteArrayToImageConverter(byte[] imageBytes) throws IOException, NullPointerException{
+        if(imageBytes == null) return null;
         ByteArrayInputStream byteArrayInputStreams = new ByteArrayInputStream(imageBytes);
         BufferedImage bufferedImage = ImageIO.read(byteArrayInputStreams);
         return SwingFXUtils.toFXImage(bufferedImage, null);
