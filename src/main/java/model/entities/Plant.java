@@ -1,6 +1,8 @@
 package model.entities;
 
 import javafx.scene.image.Image;
+import model.entities.enums.PlantConservationStatus;
+
 import java.util.Objects;
 
 public class Plant {
@@ -9,13 +11,13 @@ public class Plant {
     private String descriptions;
     private String habitat;
     private String origin;
-    private int conservationStatus;
+    private PlantConservationStatus conservationStatus;
     private Image image;
 
     public Plant() {
     }
 
-    public Plant(String scientificName, String commonName, String descriptions, String habitat, String origin, int conservationStatus, Image image) {
+    public Plant(String scientificName, String commonName, String descriptions, String habitat, String origin, PlantConservationStatus conservationStatus, Image image) {
         this.scientificName = scientificName;
         this.commonName = commonName;
         this.descriptions = descriptions;
@@ -41,11 +43,11 @@ public class Plant {
         this.commonName = commonName;
     }
 
-    public String getDescription() {
+    public String getDescriptions() {
         return descriptions;
     }
 
-    public void setDescription(String description) {
+    public void setDescriptions(String descriptions) {
         this.descriptions = descriptions;
     }
 
@@ -65,11 +67,11 @@ public class Plant {
         this.origin = origin;
     }
 
-    public int getConservationStatus() {
+    public PlantConservationStatus getConservationStatus() {
         return conservationStatus;
     }
 
-    public void setConservationStatus(int conservationStatus) {
+    public void setConservationStatus(PlantConservationStatus conservationStatus) {
         this.conservationStatus = conservationStatus;
     }
 
