@@ -12,9 +12,14 @@ module crud.sistemacrud {
     opens controllers to javafx.fxml;
     exports controllers;
 
+    opens model.entities to java.base;
+    exports model.entities;
+
     opens model.entities.enums to javafx.fxml;
     exports model.entities.enums;
 
     opens views to javafx.fxml;
     exports views;
+    exports utils;
+    opens utils to javafx.fxml;
 }
