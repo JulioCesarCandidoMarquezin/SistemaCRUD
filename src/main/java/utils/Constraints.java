@@ -3,6 +3,8 @@ package utils;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
+import java.text.Normalizer;
+
 public class Constraints {
     public static void limitTextField(TextField textField, int maxLength) {
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
@@ -26,5 +28,15 @@ public class Constraints {
                 textField.setText(oldValue);
             }
         });
+    }
+
+    public static String removeAccents(String input) {
+        if (input == null) return null;
+        return Normalizer.normalize(input, Normalizer.Form.NFD).replaceAll("\\p{M}", "");
+    }
+
+    public static String removeSpaces(String input) {
+        if (input == null) return null;
+        return input.replaceAll(" ", "");
     }
 }
