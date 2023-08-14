@@ -16,29 +16,29 @@
       <URL value="@../css/Insert.css" />
    </stylesheets>
 
-   <AnchorPane  prefHeight="500.0" prefWidth="624.0">
+   <AnchorPane prefHeight="500.0" prefWidth="624.0">
       <Label layoutX="14.0" layoutY="11.0" prefHeight="25.0" prefWidth="84.0" text="Scientific Name" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="15.0" />
       <Label layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="84.0" text="Common Name" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="55.0" />
       <Label layoutX="28.0" layoutY="86.0" prefHeight="25.0" prefWidth="67.0" text="Descriptions" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="95.0" />
-      <Label layoutX="5.0" layoutY="327.0" prefHeight="25.0" prefWidth="67.0" text="Habitats" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="340.0" />
-      <Label layoutX="5.0" layoutY="367.0" prefHeight="25.0" prefWidth="67.0" text="Origin" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="380.0" />
-      <Label layoutX="336.0" layoutY="380.0" prefHeight="25.0" prefWidth="120.0" text="Conservation Status" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="380.0" />
+      <Label layoutX="10.0" layoutY="313.0" prefHeight="25.0" prefWidth="67.0" text="Habitat" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="313.0" />
+      <Label layoutX="10.0" layoutY="355.0" prefHeight="25.0" prefWidth="67.0" text="Origin" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="355.0" />
+      <Label layoutX="10.0" layoutY="397.0" prefHeight="25.0" prefWidth="120.0" text="Conservation Status" AnchorPane.rightAnchor="494.0" AnchorPane.topAnchor="397.0" />
       <Label layoutX="334.0" layoutY="95.0" prefHeight="25.0" prefWidth="46.0" text="Image" AnchorPane.topAnchor="95.0" />
-      <TextField fx:id="scientificNameTextField" layoutX="125.0" layoutY="11.0" prefHeight="25.0" prefWidth="520.0" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="15.0">
+      <TextField fx:id="scientificNameTextField" layoutX="125.0" layoutY="11.0" prefHeight="25.0" prefWidth="520.0" styleClass="form" AnchorPane.bottomAnchor="470.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="15.0">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </TextField>
-      <TextField fx:id="commonNameTextField" layoutX="97.0" layoutY="55.0" prefHeight="25.0" prefWidth="514.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="55.0">
+      <TextField fx:id="commonNameTextField" layoutX="97.0" layoutY="55.0" prefHeight="25.0" prefWidth="514.0" styleClass="form" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="55.0">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </TextField>
-      <TextArea fx:id="descriptionTextArea" layoutX="99.0" layoutY="86.0" prefHeight="230.0" prefWidth="230.0" AnchorPane.topAnchor="95.0" />
-      <TextField fx:id="habitatsTextField" layoutX="121.0" layoutY="327.0" prefHeight="25.0" prefWidth="514.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="340.0" />
-      <TextField fx:id="originTextField" layoutX="100.0" layoutY="380.0" prefHeight="25.0" prefWidth="230.0" AnchorPane.rightAnchor="294.0" AnchorPane.topAnchor="380.0" />
-      <ComboBox fx:id="conservationStatusComboBox" layoutX="334.0" layoutY="277.0" prefHeight="25.0" prefWidth="150.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="380.0" />
-      <ImageView fx:id="imageView" fitHeight="230.0" fitWidth="230.0" layoutX="380.0" layoutY="95.0" onMouseClicked="#imageViewAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="95.0" />
-      <Button fx:id="insertButton" onAction="#insert" layoutX="237.0" layoutY="432.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Insert" AnchorPane.bottomAnchor="30.0" />
+      <TextArea fx:id="descriptionTextArea" layoutX="99.0" layoutY="86.0" prefHeight="195.0" prefWidth="230.0" styleClass="form" AnchorPane.topAnchor="95.0" />
+      <TextField fx:id="habitatsTextField" layoutX="99.0" layoutY="311.0" prefHeight="29.0" prefWidth="230.0" styleClass="form" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="311.0" />
+      <TextField fx:id="originTextField" layoutX="99.0" layoutY="353.0" prefHeight="25.0" prefWidth="230.0" styleClass="form" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="353.0" />
+      <ComboBox fx:id="conservationStatusComboBox" layoutX="179.0" layoutY="400.0" prefHeight="29.0" prefWidth="195.0" styleClass="form" AnchorPane.rightAnchor="295.0" AnchorPane.topAnchor="395.0" />
+      <ImageView fx:id="imageView" fitHeight="328.0" fitWidth="230.0" layoutX="387.0" layoutY="95.0" onMouseClicked="#imageViewAction" pickOnBounds="true" preserveRatio="true" styleClass="form" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="95.0" />
+      <Button fx:id="insertButton" layoutX="237.0" layoutY="443.0" mnemonicParsing="false" onAction="#insert" prefHeight="50.0" prefWidth="150.0" text="Insert" AnchorPane.bottomAnchor="19.0" />
    </AnchorPane>
 </Pane>

@@ -17,15 +17,17 @@
             <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
-         <Button fx:id="buttonHome" onAction="#onButtonHomeAction" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Home" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="0" />
-         <Button fx:id="buttonInsert" onAction="#onButtonInsertAction" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Insert Plant" textAlignment="CENTER" GridPane.rowIndex="1"/>
-         <Button fx:id="buttonRead" onAction="#onButtonReadAction" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Read Plant" textAlignment="CENTER" GridPane.rowIndex="2" />
-         <Button fx:id="buttonUpdate" onAction="#onButtonUpdateAction" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Update Plant" textAlignment="CENTER" GridPane.rowIndex="3" />
-         <Button fx:id="buttonDelete" onAction="#onButtonDeleteAction" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Delete Plant" textAlignment="CENTER" GridPane.rowIndex="4" />
-         <Button fx:id="buttonGenerateReport" onAction="#onButtonGenerateReport" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Generate Report" textAlignment="CENTER" GridPane.rowIndex="5" />
+         <Button fx:id="buttonHome" userData="Home" onAction="#loadFXML" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Home" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="0" />
+         <Button fx:id="buttonInsert" userData="Insert" onAction="#loadFXML" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Insert Plant" textAlignment="CENTER" GridPane.rowIndex="1"/>
+         <Button fx:id="buttonRead" userData="Read" onAction="#loadFXML" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Read Plant" textAlignment="CENTER" GridPane.rowIndex="2" />
+         <Button fx:id="buttonUpdate" userData="Update" onAction="#loadFXML" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Update Plant" textAlignment="CENTER" GridPane.rowIndex="3" />
+         <Button fx:id="buttonDelete" userData="Delete" onAction="#loadFXML" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Delete Plant" textAlignment="CENTER" GridPane.rowIndex="4" />
+         <Button fx:id="buttonGenerateReport" userData="GenerateReport" onAction="#loadFXML" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Generate Report" textAlignment="CENTER" GridPane.rowIndex="5" />
       </GridPane>
    </left>
    <center>
-      <Pane fx:id="fxml"/>
+      <Pane fx:id="fxml">
+         <fx:include source="Home.fxml"/>
+      </Pane>
    </center>
 </BorderPane>
