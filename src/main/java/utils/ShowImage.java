@@ -11,21 +11,29 @@ public class ShowImage {
     private static final Stage stage = new Stage();
 
     public static void showImagePopup(Image image) {
+        if(image == null) return;
+
         ImageView imageView = new ImageView(image);
         StackPane root = new StackPane(imageView);
         Scene scene = new Scene(root);
 
         if(image.getHeight() > getMaxHeight() || image.getWidth() > getMaxWidth()) {
-            imageView.setFitHeight(getMaxHeight());
+            imageView.setFitHeight(getMaxHeight() - 30);
             imageView.setFitWidth(getMaxWidth());
         }
-        imageView.fitWidthProperty().bind(scene.widthProperty());
-        imageView.fitHeightProperty().bind(scene.heightProperty());
+        else{
+            imageView.setFitWidth(image.getWidth());
+            imageView.setFitHeight(image.getHeight());
+        }
+
         imageView.setPreserveRatio(true);
 
         stage.setScene(scene);
         stage.setTitle("Image");
         stage.centerOnScreen();
+        stage.setMaxHeight(getMaxHeight());
+        stage.setMaxWidth(getMaxWidth());
+        stage.setResizable(false);
         stage.show();
     }
 
